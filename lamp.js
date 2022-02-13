@@ -11,7 +11,7 @@ function broken(){
 function lampOn(){
   if(!broken()){
     lamp.src = 'img/ligada.png';
-    document.body.style.backgroundColor = "yellow"; 
+    document.body.style.backgroundColor = "#ffff00"; 
     msg.innerText = 'Apague a luz!';  
   }
 }
@@ -19,14 +19,14 @@ function lampOn(){
 function lampOff(){
   if(!broken()){
     lamp.src = 'img/desligada.png';
-    document.body.style.backgroundColor = "black";
+    document.body.style.backgroundColor = "#000000";
     msg.innerText = 'Dê dois clicks na lâmpada!';
   }
 }
 
 function lampBroken(){
   lamp.src = 'img/quebrada.png';
-  document.body.style.backgroundColor = "red";
+  document.body.style.backgroundColor = "#ff0000";
   msg.innerText = 'xiiiiii!!!';
 }
 
